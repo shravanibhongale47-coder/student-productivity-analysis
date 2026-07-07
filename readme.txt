@@ -1,178 +1,157 @@
-streamlit run app.py
+# 🎓 Student Productivity Predictor
 
-C:\Users\YourName\Desktop\Student_Productivity_Analysis> streamlit run app.py
+An interactive Streamlit application that analyzes student lifestyle habits and predicts productivity based on study hours, sleep patterns, and social media usage. The application provides personalized recommendations and visual insights to help students improve their study-life balance.
 
-Email:
+---
 
-Bas Enter press karo
-Email dena zaroori nahi hai.
+## 🚀 Features
 
-Uske baad kya hoga
+- 📊 Productivity Score Prediction
+- 🎯 Productivity Level Classification
+- 💡 Personalized Recommendations
+- 📈 Interactive Data Visualizations
+- 🌐 Streamlit Web Application
+- 📂 Student Lifestyle Data Analysis
 
-Terminal me kuch aisa dikhega:
+---
 
-Local URL: http://localhost:8501
+## 🛠 Technologies Used
 
-Example:
+- Python
+- Streamlit
+- Pandas
+- Matplotlib
+- CSV Dataset
 
-Local URL: http://localhost:8501
-Network URL: http://192.168.xx.xx:8501
+---
 
+## 📂 Dataset Features
 
+The dataset includes:
 
-Project: Student Lifestyle and Productivity Analysis
-1️⃣ Problem Identify kiya
+- Student ID
+- Study Hours per Day
+- Sleep Hours per Day
+- Social Hours per Day
+- Physical Activity Hours per Day
+- GPA
+- Stress Level
 
-Sabse pehle humne yeh problem identify ki:
+---
 
-Aajkal students ka study time, sleep aur social media usage unki productivity ko affect karta hai.
+## ⚙️ Productivity Formula
 
-Isliye humne ek system banaya jo student lifestyle analyze kare aur productivity calculate kare.
-
-2️⃣ Dataset Use kiya
-
-Humne ek dataset use kiya jisme student lifestyle ki information thi.
-
-Dataset me columns the:
-
-Student_ID
-
-Study_Hours_Per_Day
-
-Sleep_Hours_Per_Day
-
-Social_Hours_Per_Day
-
-Physical_Activity_Hours_Per_Day
-
-GPA
-
-Stress_Level
-
-Is dataset ko Python me load kiya using Pandas.
-
-Example:
-
-data = pd.read_csv("student_lifestyle_dataset.csv")
-
-Is step me humne data ko read aur analyze kiya.
-
-3️⃣ Productivity Formula Banaya
-
-Humne ek formula banaya jo student lifestyle ko use karke productivity score calculate karta hai.
-
-Logic:
-
-Study hours productivity increase karte hain
-
-Sleep hours bhi productivity increase karte hain
-
-Social media productivity decrease karta hai
-
-Formula:
-
+```python
 Productivity Score =
-(Study Hours × 10) + (Sleep Hours × 5) − (Social Media Hours × 6)
+(Study Hours × 10)
++ (Sleep Hours × 5)
+− (Social Media Hours × 6)
+```
 
-Is formula se system productivity score calculate karta hai.
+---
 
-4️⃣ Productivity Level Classify kiya
+## 📊 Productivity Levels
 
-Score calculate hone ke baad system usko categories me divide karta hai:
+| Score | Level |
+|-------|-------|
+| 0–40 | 🔴 Low Productivity |
+| 41–70 | 🟡 Medium Productivity |
+| Above 70 | 🟢 High Productivity |
 
-Score	Productivity
-0–40	Low Productivity
-40–70	Medium Productivity
-70+	High Productivity
+---
 
-Isse user ko pata chalta hai ki uski productivity low hai ya high.
+## 💡 Recommendations
 
-5️⃣ Recommendation System Banaya
+The application provides personalized suggestions such as:
 
-System user ko suggestions bhi deta hai.
+- Reduce social media usage
+- Increase study hours
+- Improve sleep schedule
 
-Example:
+---
 
-Agar social media zyada hai → reduce social media
+## 📈 Visualizations
 
-Agar sleep kam hai → increase sleep
+The dashboard includes:
 
-Agar study hours kam hai → increase study hours
+- Study Hours vs GPA
+- Sleep Hours vs Stress Level
 
-Isse system student ko better lifestyle suggest karta hai.
+---
 
-6️⃣ Data Visualization kiya
+## ▶️ Run Locally
 
-Dataset ko visualize kiya using Matplotlib.
+### Clone Repository
 
-Example graphs:
+```bash
+git clone https://github.com/yourusername/Student-Productivity-Predictor.git
+```
 
-Study Hours vs GPA
+### Install Dependencies
 
-Is graph se pata chalta hai:
+```bash
+pip install streamlit pandas matplotlib
+```
 
-Zyada study hours → better academic performance.
+### Run Application
 
-Sleep Hours vs Stress Level
+```bash
+streamlit run app.py
+```
 
-Is graph se pata chalta hai:
+Open your browser and visit:
 
-Kam sleep → stress increase.
+```
+http://localhost:8501
+```
 
-Visualization se data patterns samajhne me help milti hai.
+---
 
-7️⃣ Interactive Web Application Banaya
+## 📁 Project Structure
 
-Humne ek web app banaya using Streamlit.
+```
+Student-Productivity-Predictor
+│
+├── app.py
+├── analysis.py
+├── student_lifestyle_dataset.csv
+├── digital_addiction_analysis.csv
+├── requirements.txt
+├── README.md
+└── screenshots
+```
 
-Isme user sliders se input deta hai:
+---
 
-Study Hours
+## 🎯 Real-World Applications
 
-Sleep Hours
+- Student Performance Analysis
+- Educational Analytics
+- Lifestyle Monitoring
+- Productivity Improvement
+- Academic Decision Support
 
-Social Media Hours
+---
 
-System instantly:
+## 📚 Skills Demonstrated
 
-✔ Productivity score calculate karta hai
-✔ Productivity level show karta hai
-✔ Recommendations deta hai
+- Python Programming
+- Data Analysis
+- Data Visualization
+- Dashboard Development
+- Streamlit
+- Problem Solving
 
-8️⃣ Final Dashboard Output
+---
 
-User jab values change karta hai to system:
+## 👩‍💻 Author
 
-Productivity score show karta hai
+**Shravani Vikram Bhongale**
 
-Productivity level batata hai
+- LinkedIn: https:https://www.linkedin.com/in/shravani-bhongale-20336532b/
+- GitHub: https://github.com/shravanibhongale47-coder
 
-Lifestyle suggestions deta hai
 
-Dataset graphs display karta hai
 
-Isse project interactive analytics dashboard ban gaya.
 
-9️⃣ Project ka Real Life Use
 
-Ye system students ko help karta hai:
-
-Apni lifestyle habits samajhne me
-
-Productivity improve karne me
-
-Study-life balance maintain karne me
-
-10️⃣ Project se kya seekha
-
-Is project me humne seekha:
-
-Python programming
-
-Data analysis using Pandas
-
-Data visualization using Matplotlib
-
-Interactive dashboard using Streamlit
-
-Real world data analysis
